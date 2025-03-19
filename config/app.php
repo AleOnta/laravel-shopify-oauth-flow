@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://localhost:8000'),
 
     /*
     |--------------------------------------------------------------------------
@@ -122,5 +122,12 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+
+    'shopify' => [
+        'client_id' => env('SHOPIFY_APP_CLIENT_ID'),
+        'client_secret' => env('SHOPIFY_APP_CLIENT_SECRET'),
+        'scopes' => env('SHOPIFY_APP_SCOPES'),
+        'redirect_uri' => env('SHOPIFY_APP_REDIRECT_URI'),
+    ]
 
 ];
